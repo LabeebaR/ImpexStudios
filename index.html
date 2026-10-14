@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- High-Impact SEO Meta Tags -->
+  <title>Impex Studios — Bespoke Web Design & Digital Marketing Agency</title>
+  <meta name="description" content="Impex Studios is an elite digital marketing agency and bespoke web studio. We engineer conversion-driven digital flagships and search dominance for ambitious businesses. Turnkey delivery from $499." />
+  <meta name="keywords" content="marketing agency, digital marketing agency, bespoke web design, luxury web development, organic SEO agency, high converting website studio, Toronto marketing agency" />
+  <meta name="author" content="Impex Studios" />
+  <link rel="canonical" href="https://impexstudios.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://impexstudios.com/" />
+  <meta property="og:title" content="Impex Studios — Bespoke Web Design & Digital Marketing Agency" />
+  <meta property="og:description" content="We architect digital platforms that command market leadership. High-converting engineering and search dominance." />
+  <meta property="og:site_name" content="Impex Studios" />
+
+  <!-- Fonts: Instrument Serif, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            studio: {
+              base: '#08080a',
+              surface: '#0e0f14',
+              card: '#12131a',
+              border: 'rgba(255, 255, 255, 0.08)',
+              accent: '#a855f7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Bespoke Studio Stylesheet -->
+  <link rel="stylesheet" href="public/css/style.css" />
+
+  <!-- Structured JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MarketingAgency",
+        "@id": "https://impexstudios.com/#agency",
+        "name": "Impex Studios",
+        "url": "https://impexstudios.com",
+        "description": "Premier digital marketing agency and bespoke web studio delivering conversion architecture and organic search dominance.",
+        "telephone": "+1-289-608-9883",
+        "email": "contact@impexstudios.com",
+        "priceRange": "$499 - $3,999",
+        "currenciesAccepted": "USD, CAD",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "addressCountry": "CA"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.98",
+          "reviewCount": "54",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://impexstudios.com/#website",
+        "url": "https://impexstudios.com",
+        "name": "Impex Studios"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-[#08080a] text-zinc-100 antialiased selection:bg-white selection:text-black relative min-h-screen flex flex-col font-sans">
+
+  <!-- Subtle Architectural Grid Background -->
+  <div class="fixed inset-0 bg-studio-grid pointer-events-none -z-20 opacity-70"></div>
+  <div class="bg-radial-subtle"></div>
+
+  <!-- STUDIO TELEMETRY HEADER STRIP -->
+  <div class="border-b border-white/[0.06] bg-[#08080a]/90 text-[11px] font-mono text-zinc-400 py-2 hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-2">
+          <span class="status-dot"></span>
+          <span class="text-zinc-300 font-medium">STUDIO STATUS: ACCEPTING SELECT COMMISSIONS</span>
+        </span>
+        <span class="text-zinc-600">|</span>
+        <span>TORONTO, CA [43.6532° N, 79.3832° W]</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <span>LOCAL TIME: <strong id="live-studio-clock" class="text-zinc-200 font-normal">--:--:-- EST</strong></span>
+        <span class="text-zinc-600">|</span>
+        <a href="tel:+12896089883" class="text-zinc-300 hover:text-white transition-colors">+1 (289) 608-9883</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 studio-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-6">
+      
+      <!-- Brand Identity -->
+      <a href="index.html" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Impex Studios Homepage">
+        <div class="w-8 h-8 rounded-lg bg-zinc-900 border border-white/20 flex items-center justify-center font-mono font-bold text-xs text-white group-hover:border-white transition-colors shadow-sm">
+          IX
+        </div>
+        <div class="flex flex-col">
+          <span class="font-sans font-extrabold text-base tracking-tight text-white group-hover:text-zinc-300 transition-colors">
+            IMPEX STUDIOS
+          </span>
+          <span class="meta-tag -mt-0.5 text-[9px] text-zinc-400">Design & Marketing</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-1 bg-white/[0.02] border border-white/[0.08] rounded-full px-3 py-1 backdrop-blur-xl" aria-label="Primary Navigation">
+        <a href="index.html" class="px-4 py-1.5 text-xs font-medium rounded-full bg-white/10 text-white transition-all">Overview</a>
+        <a href="about.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Agency</a>
+        <a href="services.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Services</a>
+        <a href="portfolio.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Selected Work</a>
+        <a href="pricing.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Pricing</a>
+        <a href="faq.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Knowledgebase</a>
+        <a href="contact.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Contact</a>
+      </nav>
+
+      <!-- Executive Action -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+12896089883" class="hidden sm:inline-flex items-center gap-2 text-xs font-mono px-3.5 py-1.5 text-zinc-300 hover:text-white transition rounded-full border border-white/10 hover:border-white/25">
+          <span>CALL / TEXT</span>
+        </a>
+
+        <a href="contact.html" class="btn-studio-primary text-xs py-2 px-4">
+          <span>Start Project</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+
+        <button id="mobile-menu-toggle" type="button" class="lg:hidden p-2 rounded-lg bg-white/5 border border-white/10 text-zinc-300" aria-label="Toggle navigation menu">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 bg-[#08080a]/95 backdrop-blur-2xl hidden flex-col p-6 lg:hidden">
+    <div class="flex items-center justify-between pb-6 border-b border-white/10">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-zinc-900 border border-white/20 flex items-center justify-center font-mono font-bold text-xs text-white">IX</div>
+        <span class="font-extrabold text-white text-base">IMPEX STUDIOS</span>
+      </div>
+      <button id="mobile-close-btn" class="p-2 text-zinc-400 hover:text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-4 mt-8 text-base font-medium text-zinc-200">
+      <a href="index.html" class="py-2 px-4 rounded-xl bg-white/10 text-white">Overview</a>
+      <a href="about.html" class="py-2 px-4 rounded-xl hover:bg-white/5">The Agency</a>
+      <a href="services.html" class="py-2 px-4 rounded-xl hover:bg-white/5">Services & Packages</a>
+      <a href="portfolio.html" class="py-2 px-4 rounded-xl hover:bg-white/5">Selected Work</a>
+      <a href="pricing.html" class="py-2 px-4 rounded-xl hover:bg-white/5">Pricing</a>
+      <a href="faq.html" class="py-2 px-4 rounded-xl hover:bg-white/5">Knowledgebase</a>
+      <a href="contact.html" class="py-2 px-4 rounded-xl hover:bg-white/5">Contact</a>
+    </nav>
+
+    <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-3">
+      <a href="tel:+12896089883" class="flex items-center justify-center gap-2 py-3 rounded-xl bg-white/5 border border-white/10 text-white font-mono text-xs">
+        +1 (289) 608-9883
+      </a>
+      <a href="contact.html" class="btn-studio-primary w-full text-center py-3">Initiate Project</a>
+    </div>
+  </div>
+
+  <main class="flex-grow">
+    
+    <!-- EDITORIAL BESPOKE HERO SECTION (NO AI BLOBS) -->
+    <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 border-b border-white/[0.06]">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <!-- Top Editorial Kicker -->
+        <div class="flex items-center gap-3 mb-6">
+          <span class="meta-tag text-zinc-400">[ ARCHITECTURAL WEB DESIGN & PERFORMANCE SEO ]</span>
+          <span class="w-8 h-px bg-zinc-700"></span>
+          <span class="text-xs text-zinc-400 font-mono">TORONTO · GLOBAL</span>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-start">
+          
+          <!-- Left: Editorial Headline & Stance -->
+          <div class="lg:col-span-7 flex flex-col items-start z-10">
+            
+            <h1 class="font-sans font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-[4.25rem] tracking-tight leading-[1.05] text-white">
+              We architect digital platforms that <br />
+              <span class="font-serif-italic font-normal text-silver-gradient text-5xl sm:text-6xl md:text-7xl lg:text-[4.75rem]">command market leadership.</span>
+            </h1>
+
+            <p class="mt-8 text-base sm:text-lg text-zinc-300 max-w-xl leading-relaxed font-light">
+              We partner with ambitious business owners to engineer high-converting digital storefronts and organic search supremacy. No off-the-shelf page builders, no junior handoffs — just precision code and verified commercial outcomes.
+            </p>
+
+            <!-- Specification Badges -->
+            <div class="mt-8 grid grid-cols-3 gap-4 border-y border-white/[0.08] py-5 w-full max-w-lg">
+              <div>
+                <div class="meta-tag text-zinc-400">ENTRY TIER</div>
+                <div class="text-sm font-bold text-white font-mono mt-0.5">$499 Flat</div>
+              </div>
+              <div>
+                <div class="meta-tag text-zinc-400">TURNAROUND</div>
+                <div class="text-sm font-bold text-white font-mono mt-0.5">24h – 7 Days</div>
+              </div>
+              <div>
+                <div class="meta-tag text-zinc-400">CORE VITALS</div>
+                <div class="text-sm font-bold text-emerald-400 font-mono mt-0.5">100 / 100</div>
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="mt-10 flex flex-wrap gap-4 items-center">
+              <a href="contact.html" class="btn-studio-primary text-sm px-7 py-3.5">
+                <span>Start Your Project</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </a>
+
+              <a href="portfolio.html" class="btn-studio-secondary text-sm px-6 py-3.5">
+                <span>Review Case Studies</span>
+              </a>
+            </div>
+
+            <!-- Client Proof Text -->
+            <div class="mt-8 flex items-center gap-3 text-xs text-zinc-400 font-mono">
+              <span class="text-white font-bold">4.98 / 5.0</span>
+              <span class="text-zinc-600">·</span>
+              <span>54 VERIFIED CLIENT DEPLOYMENTS ACROSS NORTH AMERICA</span>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Live Staging Viewport (Proves Real High-End Craft) -->
+          <div class="lg:col-span-5">
+            <div class="device-viewport">
+              
+              <!-- Chrome Header -->
+              <div class="device-viewport-header justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="window-pill bg-zinc-700"></span>
+                  <span class="window-pill bg-zinc-700"></span>
+                  <span class="window-pill bg-zinc-700"></span>
+                </div>
+                <div class="font-mono text-[10px] text-zinc-400 bg-white/[0.04] border border-white/[0.06] rounded-md px-3 py-1 flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  <span id="hero-viewport-url">nonnaskitchen.com [STAGING PREVIEW]</span>
+                </div>
+                <span class="font-mono text-[10px] text-zinc-400">2026 PROD</span>
+              </div>
+
+              <!-- Interactive Tab Switcher -->
+              <div class="grid grid-cols-4 border-b border-white/[0.06] bg-black/40 text-[10px] font-mono">
+                <button data-target="screen-nonnas" data-roi="+112% ONLINE BOOKINGS" data-sub="Ranks #1 locally for Italian dining" data-url="nonnaskitchen.com [STAGING]" class="hero-viewport-tab py-2.5 px-2 text-center text-white bg-white/10 border-b-2 border-white/40 transition-all truncate">
+                  Nonna's
+                </button>
+                <button data-target="screen-ironclad" data-roi="3.4× QUALIFIED QUOTES" data-sub="0.8s First Meaningful Paint" data-url="ironcladbuilders.com [STAGING]" class="hero-viewport-tab py-2.5 px-2 text-center text-zinc-400 border-b-2 border-transparent transition-all truncate">
+                  Ironclad
+                </button>
+                <button data-target="screen-harbor" data-roi="+87% DIRECT VIEWS" data-sub="5.1× Agent contact conversions" data-url="harborrealty.com [STAGING]" class="hero-viewport-tab py-2.5 px-2 text-center text-zinc-400 border-b-2 border-transparent transition-all truncate">
+                  Harbor
+                </button>
+                <button data-target="screen-wellcare" data-roi="100% WCAG COMPLIANT" data-sub="+64% New patient digital intake" data-url="wellcareclinic.com [STAGING]" class="hero-viewport-tab py-2.5 px-2 text-center text-zinc-400 border-b-2 border-transparent transition-all truncate">
+                  Wellcare
+                </button>
+              </div>
+
+              <!-- Viewport Display Canvas -->
+              <div class="p-6 bg-gradient-to-b from-[#12141c] to-[#0a0b0e] min-h-[300px] flex flex-col justify-between">
+                
+                <!-- Screen 1: Nonna's -->
+                <div id="screen-nonnas" class="hero-viewport-screen space-y-4">
+                  <div class="flex items-center justify-between text-xs border-b border-white/[0.06] pb-3">
+                    <span class="font-serif italic text-lg text-white">Nonna's Kitchen</span>
+                    <span class="font-mono text-[10px] text-zinc-400 uppercase">Hospitality / Dining</span>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="h-2.5 w-1/3 bg-zinc-700/60 rounded"></div>
+                    <p class="text-sm text-zinc-200 font-serif leading-snug">
+                      "Authentic Roman cuisine, live seasonal cellar menus, and seamless reservations."
+                    </p>
+                  </div>
+                  <div class="p-4 rounded-xl bg-black/40 border border-white/[0.08] grid grid-cols-2 gap-4">
+                    <div>
+                      <div class="font-mono text-[10px] text-zinc-400">TABLE TURNOVER</div>
+                      <div class="text-base font-bold text-emerald-400 font-mono mt-0.5">+112%</div>
+                    </div>
+                    <div>
+                      <div class="font-mono text-[10px] text-zinc-400">LOCAL SEARCH</div>
+                      <div class="text-base font-bold text-white font-mono mt-0.5">Rank #1</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Screen 2: Ironclad -->
+                <div id="screen-ironclad" class="hero-viewport-screen hidden space-y-4">
+                  <div class="flex items-center justify-between text-xs border-b border-white/[0.06] pb-3">
+                    <span class="font-sans font-bold text-base text-white tracking-wider">IRONCLAD BUILDERS</span>
+                    <span class="font-mono text-[10px] text-zinc-400 uppercase">Custom Residential</span>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="h-2.5 w-1/4 bg-zinc-700/60 rounded"></div>
+                    <p class="text-sm text-zinc-200 leading-snug">
+                      High-precision architectural contractor portfolio with instant multi-step quote modeling.
+                    </p>
+                  </div>
+                  <div class="p-4 rounded-xl bg-black/40 border border-white/[0.08] grid grid-cols-2 gap-4">
+                    <div>
+                      <div class="font-mono text-[10px] text-zinc-400">QUOTE PIPELINE</div>
+                      <div class="text-base font-bold text-cyan-400 font-mono mt-0.5">3.4× Lift</div>
+                    </div>
+                    <div>
+                      <div class="font-mono text-[10px] text-zinc-400">FIRST PAINT</div>
+                      <div class="text-base font-bold text-white font-mono mt-0.5">0.8s LCP</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Screen 3: Harbor Realty -->
+                <div id="screen-harbor" class="hero-viewport-screen hidden space-y-4">
+                  <div class="flex items-center justify-between text-xs border-b border-white/[0.06] pb-3">
+                    <span class="font-sans font-bold text-base text-white">HARBOR REALTY</span>
+                    <span class="font-mono text-[10px] text-zinc-400 uppercase">Luxury Brokerage</span>
+                  </div>
+                  <div class="space-y-2">
+                    <p class="text-sm text-zinc-200 leading-snug">
+                      MLS / IDX integrated property showcase with hyper-localized neighbourhood lifestyle curation.
+                    </p>
+                  </div>
+                  <div class="p-4 rounded-xl bg-black/40 border border-white/[0.08] grid grid-cols-2 gap-4">
+                    <div>
+                      <div class="font-mono text-[10px] text-zinc-400">DIRECT INQUIRIES</div>
+                      <div class="text-base font-bold text-purple-400 font-mono mt-0.5">5.1×</div>
+                    </div>
+                    <div>
+                      <div class="font-mono text-[10px] text-zinc-400">REPEAT VISITS</div>
+                      <div class="text-base font-bold text-white font-mono mt-0.5">+87%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Screen 4: Wellcare Clinic -->
+                <div id="screen-wellcare" class="hero-viewport-screen hidden space-y-4">
+                  <div class="flex items-center justify-between text-xs border-b border-white/[0.06] pb-3">
+                    <span class="font-sans font-bold text-base text-white">WELLCARE MEDICAL</span>
+                    <span class="font-mono text-[10px] text-zinc-400 uppercase">Healthcare</span>
+                  </div>
+                  <div class="space-y-2">
+                    <p class="text-sm text-zinc-200 leading-snug">
+                      WCAG 2.1 AA certified patient portal, provider switcher, and streamlined online booking.
+                    </p>
+                  </div>
+                  <div class="p-4 rounded-xl bg-black/40 border border-white/[0.08] grid grid-cols-2 gap-4">
+                    <div>
+                      <div class="font-mono text-[10px] text-zinc-400">NEW INTAKES</div>
+                      <div class="text-base font-bold text-emerald-400 font-mono mt-0.5">+64%</div>
+                    </div>
+                    <div>
+                      <div class="font-mono text-[10px] text-zinc-400">ACCESSIBILITY</div>
+                      <div class="text-base font-bold text-white font-mono mt-0.5">100/100</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Telemetry Strip -->
+                <div class="pt-4 border-t border-white/[0.08] flex items-center justify-between">
+                  <div>
+                    <div id="hero-viewport-roi" class="font-mono text-xs font-bold text-emerald-400">+112% ONLINE BOOKINGS</div>
+                    <div id="hero-viewport-sub" class="text-[11px] text-zinc-400">Ranks #1 locally for Italian dining</div>
+                  </div>
+                  <a href="portfolio.html" class="text-xs font-mono text-zinc-300 hover:text-white flex items-center gap-1">
+                    <span>EXPLORE</span> →
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ARCHITECTURAL MARQUEE / CLIENT LOGO TICKER -->
+    <section class="py-10 border-b border-white/[0.06] bg-[#0a0a0d] overflow-hidden" aria-label="Client Ledger">
+      <div class="max-w-7xl mx-auto px-6 mb-4 flex items-center justify-between text-[11px] font-mono text-zinc-400">
+        <span>CLIENT INDEX / RECENT DEPLOYMENTS</span>
+        <span>VERIFIED RESULTS</span>
+      </div>
+
+      <div class="marquee-container relative">
+        <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0a0a0d] to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0a0a0d] to-transparent z-10 pointer-events-none"></div>
+        
+        <div class="marquee-content flex gap-12 sm:gap-16 items-center text-zinc-400 font-mono text-sm tracking-wider">
+          <span class="hover:text-white transition-colors">NONNA'S KITCHEN</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">IRONCLAD BUILDERS</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">HARBOR REALTY</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">WELLCARE CLINIC</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">REDLINE AUTO</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">STERLING LAW</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">SPARKLE PRO</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">BLOOM SALON</span>
+          <span class="text-zinc-700">/</span>
+          <!-- Duplicate for seamless infinite loop -->
+          <span class="hover:text-white transition-colors">NONNA'S KITCHEN</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">IRONCLAD BUILDERS</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">HARBOR REALTY</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">WELLCARE CLINIC</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">REDLINE AUTO</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">STERLING LAW</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">SPARKLE PRO</span>
+          <span class="text-zinc-700">/</span>
+          <span class="hover:text-white transition-colors">BLOOM SALON</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE TIERS SECTION -->
+    <section class="py-24 border-b border-white/[0.06] relative" id="packages">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div class="meta-tag text-zinc-400 mb-2">[ TRANSPARENT INVESTMENT STRUCTURE ]</div>
+            <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+              Honest Packages. Zero Retainer Surprises.
+            </h2>
+            <p class="mt-3 text-sm sm:text-base text-zinc-400 font-light max-w-xl">
+              Every build is fully custom, delivered on fixed deadlines, and governed by a 50/50 payment schedule.
+            </p>
+          </div>
+          <a href="pricing.html" class="btn-studio-secondary text-xs self-start md:self-auto">
+            <span>View Complete Breakdown</span> →
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <!-- Tier 1 -->
+          <div class="studio-card spotlight-card rounded-2xl p-8 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="meta-tag text-zinc-400">[ SPEC 01 ]</span>
+                <span class="text-[11px] font-mono text-zinc-400">TURNAROUND: 24-48H</span>
+              </div>
+              <h3 class="font-sans font-bold text-2xl text-white mt-4">Landing Page</h3>
+              <p class="mt-2 text-xs text-zinc-400 leading-relaxed font-light">
+                A single high-converting digital storefront engineered for paid acquisition and instant local lead capture.
+              </p>
+
+              <div class="mt-6 flex items-baseline gap-3">
+                <span class="font-mono font-bold text-4xl text-white">$499</span>
+                <span class="text-xs text-zinc-500 line-through font-mono">$999 REGULAR</span>
+              </div>
+
+              <ul class="mt-6 space-y-3 text-xs text-zinc-300 border-t border-white/[0.08] pt-6 font-light">
+                <li class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-mono">—</span>
+                  <span>Bespoke editorial UX/UI layout</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-mono">—</span>
+                  <span>Mobile & single-thumb optimized</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-mono">—</span>
+                  <span>Interactive contact capture form</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-mono">—</span>
+                  <span>Foundational on-page SEO setup</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-mono">—</span>
+                  <span>Sub-second load speed (99/100 score)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/[0.06]">
+              <a href="contact.html?package=landing-page" class="btn-studio-secondary w-full text-center text-xs">
+                Select Landing Page
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 2 (Featured) -->
+          <div class="studio-card studio-card-featured spotlight-card rounded-2xl p-8 flex flex-col justify-between relative">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="meta-tag text-purple-400">[ SPEC 02 / RECOMMENDED ]</span>
+                <span class="text-[11px] font-mono text-purple-300">TURNAROUND: 5-7 DAYS</span>
+              </div>
+              <h3 class="font-sans font-bold text-2xl text-white mt-4">Multi-Page Website</h3>
+              <p class="mt-2 text-xs text-zinc-300 leading-relaxed font-light">
+                Full authority platform up to 5 custom pages (Home, About, Services, Contact, Gallery). Built to dominate local search rankings.
+              </p>
+
+              <div class="mt-6 flex items-baseline gap-3">
+                <span class="font-mono font-bold text-4xl text-white">$999</span>
+                <span class="text-xs text-zinc-500 line-through font-mono">$1,999 REGULAR</span>
+              </div>
+
+              <ul class="mt-6 space-y-3 text-xs text-zinc-200 border-t border-white/[0.08] pt-6 font-light">
+                <li class="flex items-center gap-3">
+                  <span class="text-purple-400 font-mono">✦</span>
+                  <span>Up to 5 bespoke responsive pages</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-purple-400 font-mono">✦</span>
+                  <span>Comprehensive Local SEO & Schema markup</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-purple-400 font-mono">✦</span>
+                  <span>Custom interactive quote & intake forms</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-purple-400 font-mono">✦</span>
+                  <span>Google Maps & multi-location support</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-purple-400 font-mono">✦</span>
+                  <span>30 Days post-launch warranty & support</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/[0.08]">
+              <a href="contact.html?package=multi-page" class="btn-studio-primary w-full text-center text-xs">
+                Select Multi-Page
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="studio-card spotlight-card rounded-2xl p-8 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="meta-tag text-zinc-400">[ SPEC 03 ]</span>
+                <span class="text-[11px] font-mono text-zinc-400">TURNAROUND: 7-10 DAYS</span>
+              </div>
+              <h3 class="font-sans font-bold text-2xl text-white mt-4">Business Website Pro</h3>
+              <p class="mt-2 text-xs text-zinc-400 leading-relaxed font-light">
+                Enterprise-grade architecture with up to 10 pages, rich CMS blog engine, case study portfolio, GA4 tracking and CRM sync.
+              </p>
+
+              <div class="mt-6 flex items-baseline gap-3">
+                <span class="font-mono font-bold text-4xl text-white">$1,499</span>
+                <span class="text-xs text-zinc-500 line-through font-mono">$2,999 REGULAR</span>
+              </div>
+
+              <ul class="mt-6 space-y-3 text-xs text-zinc-300 border-t border-white/[0.08] pt-6 font-light">
+                <li class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-mono">—</span>
+                  <span>Up to 10 custom designed pages</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-mono">—</span>
+                  <span>Dynamic blog & case study engine</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-mono">—</span>
+                  <span>Google Analytics 4 event tracking</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-mono">—</span>
+                  <span>Advanced technical SEO & speed tuning</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-mono">—</span>
+                  <span>Full CRM integration & intake routing</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/[0.06]">
+              <a href="contact.html?package=business-pro" class="btn-studio-secondary w-full text-center text-xs">
+                Select Business Pro
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ARCHITECTURAL PRINCIPLES (SWISS BENTO GRID - NO EMOJIS) -->
+    <section class="py-24 border-b border-white/[0.06] bg-[#09090c] relative">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="max-w-2xl mb-16">
+          <div class="meta-tag text-zinc-400 mb-2">[ THE STUDIO STANDARD ]</div>
+          <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            Seven Principles We Never Compromise On.
+          </h2>
+          <p class="mt-3 text-sm text-zinc-400 font-light">
+            Every technical and aesthetic decision is calibrated to establish authority and drive verifiable commercial growth.
+          </p>
+        </div>
+
+        <!-- Precision Swiss Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="studio-card spotlight-card rounded-2xl p-8 flex flex-col justify-between">
+            <div>
+              <div class="font-mono text-xs text-zinc-400">[ 01 / VELOCITY ]</div>
+              <h3 class="font-sans font-bold text-xl text-white mt-4">Rapid Turnaround Sprints</h3>
+              <p class="mt-2 text-xs text-zinc-400 leading-relaxed font-light">
+                Landing pages delivered in 24–48 hours; multi-page platforms launched within a week. We ship rapidly because senior architects lead every sprint — not because we cut corners.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/[0.06] font-mono text-[11px] text-zinc-400">
+              AVERAGE SHIP TIME: 4.8 DAYS
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="studio-card spotlight-card rounded-2xl p-8 flex flex-col justify-between md:col-span-2">
+            <div>
+              <div class="font-mono text-xs text-purple-400">[ 02 / SEARCH & LLM CITATION ]</div>
+              <h3 class="font-sans font-bold text-2xl text-white mt-4">AI-Ready Knowledge Graph Architecture</h3>
+              <p class="mt-2 text-xs text-zinc-300 leading-relaxed font-light max-w-xl">
+                Modern discovery is no longer just ten blue links. We write semantic schema, entity graphs, and markdown-accessible structure so your brand gets indexed by both Google and conversational AI answer engines like ChatGPT, Perplexity, and Gemini.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/[0.06] flex flex-wrap gap-6 font-mono text-[11px] text-zinc-400">
+              <span>GOOGLE #1 RANK</span>
+              <span>CHATGPT CITATIONS</span>
+              <span>PERPLEXITY SOURCED</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="studio-card spotlight-card rounded-2xl p-8 flex flex-col justify-between md:col-span-2">
+            <div>
+              <div class="font-mono text-xs text-zinc-400">[ 03 / CONVERSION ERGONOMICS ]</div>
+              <h3 class="font-sans font-bold text-2xl text-white mt-4">Mobile-First Conversion UX</h3>
+              <p class="mt-2 text-xs text-zinc-300 leading-relaxed font-light max-w-xl">
+                Over 70% of high-intent traffic arrives via smartphones. We build for zero layout shift, tactile single-thumb navigation, and frictionless one-tap booking channels.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/[0.06] flex flex-wrap gap-6 font-mono text-[11px] text-zinc-400">
+              <span>98+ MOBILE CORE VITALS</span>
+              <span>SUB-SECOND FIRST PAINT</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="studio-card spotlight-card rounded-2xl p-8 flex flex-col justify-between">
+            <div>
+              <div class="font-mono text-xs text-zinc-400">[ 04 / INTEGRITY ]</div>
+              <h3 class="font-sans font-bold text-xl text-white mt-4">No Page Builder Bloat</h3>
+              <p class="mt-2 text-xs text-zinc-400 leading-relaxed font-light">
+                Hand-crafted, clean code. No bloated WordPress plugin chains that break on update. You receive a lightweight, hardened platform built to scale.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/[0.06] font-mono text-[11px] text-zinc-400">
+              ZERO THIRD-PARTY RUNTIME DEPS
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SCOPE & PROPOSAL CONFIGURATOR -->
+    <section class="py-24 border-b border-white/[0.06] relative">
+      <div class="max-w-5xl mx-auto px-6">
+        
+        <div class="text-center mb-16">
+          <div class="meta-tag text-zinc-400 mb-2">[ INVESTMENT ESTIMATOR ]</div>
+          <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            Scope Your Custom Digital Deployment.
+          </h2>
+          <p class="mt-3 text-sm text-zinc-400 font-light">
+            Select your architectural package and optional growth accelerators to review real pricing.
+          </p>
+        </div>
+
+        <div class="studio-card rounded-2xl p-8 sm:p-12 border border-white/[0.12]">
+          
+          <div class="grid md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Inputs -->
+            <div class="md:col-span-7 space-y-6">
+              <div>
+                <label for="calc-base-package" class="block meta-tag text-zinc-400 mb-2">
+                  1. SELECT CORE DIGITAL ARCHITECTURE
+                </label>
+                <select id="calc-base-package" class="w-full bg-[#14151e] border border-white/15 rounded-xl px-4 py-3 text-white text-xs sm:text-sm font-mono focus:outline-none focus:border-white">
+                  <option value="499" data-name="Landing Page Package">Landing Page Sprint — $499 (24-48h Delivery)</option>
+                  <option value="999" data-name="Multi-Page Website" selected>Multi-Page Website — $999 (Most Popular)</option>
+                  <option value="1499" data-name="Business Website Pro">Business Website Pro — $1,499 (Full CMS & Blog)</option>
+                  <option value="1999" data-name="E-Commerce Full Store">E-Commerce Website — $1,999 (Storefront & Cart)</option>
+                </select>
+              </div>
+
+              <div>
+                <div class="meta-tag text-zinc-400 mb-3">
+                  2. ATTACH GROWTH ACCELERATORS
+                </div>
+                <div class="grid sm:grid-cols-2 gap-3">
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.06] hover:border-white/20 cursor-pointer transition-all">
+                    <input type="checkbox" value="299" data-name="Custom AI Chatbot" class="calc-addon-checkbox w-4 h-4 rounded text-black focus:ring-0 bg-transparent border-white/20" />
+                    <span class="text-xs text-zinc-300 font-mono">AI Chatbot (+ $299)</span>
+                  </label>
+
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.06] hover:border-white/20 cursor-pointer transition-all">
+                    <input type="checkbox" value="249" data-name="SEO Dominance Suite" class="calc-addon-checkbox w-4 h-4 rounded text-black focus:ring-0 bg-transparent border-white/20" />
+                    <span class="text-xs text-zinc-300 font-mono">SEO Keyword Sprint (+ $249)</span>
+                  </label>
+
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.06] hover:border-white/20 cursor-pointer transition-all">
+                    <input type="checkbox" value="99" data-name="Google Business Profile Optimization" class="calc-addon-checkbox w-4 h-4 rounded text-black focus:ring-0 bg-transparent border-white/20" />
+                    <span class="text-xs text-zinc-300 font-mono">Google Business (+ $99)</span>
+                  </label>
+
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.06] hover:border-white/20 cursor-pointer transition-all">
+                    <input type="checkbox" value="249" data-name="Online Booking System" class="calc-addon-checkbox w-4 h-4 rounded text-black focus:ring-0 bg-transparent border-white/20" />
+                    <span class="text-xs text-zinc-300 font-mono">Booking Engine (+ $249)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Output Card -->
+            <div class="md:col-span-5 bg-black/60 border border-white/[0.1] rounded-xl p-6 text-center flex flex-col justify-between">
+              <div>
+                <span class="meta-tag text-zinc-400">ESTIMATED INVESTMENT</span>
+                <div class="font-mono font-bold text-5xl text-white mt-3 mb-1" id="calc-total-price">
+                  $999
+                </div>
+                <div class="text-xs text-zinc-400 font-mono mt-2" id="calc-summary-package">
+                  Multi-Page Website
+                </div>
+                <div class="mt-4 text-[11px] text-zinc-400 leading-relaxed font-light">
+                  50% deposit to initiate sprint ($499.50) · 50% only on final staging sign-off. Includes 30 days post-launch support.
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <a id="calc-cta-link" href="contact.html?package=Multi-Page%20Website&estimate=999" class="btn-studio-primary w-full py-3 text-xs">
+                  Lock In This Exact Scope
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXECUTIVE FINAL CTA -->
+    <section class="py-24 relative overflow-hidden bg-gradient-to-b from-[#08080a] via-[#101118] to-[#08080a] text-center">
+      <div class="max-w-4xl mx-auto px-6 relative z-10">
+        
+        <div class="meta-tag text-zinc-400 mb-3">[ READY TO INITIATE ]</div>
+        <h2 class="font-sans font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+          Let’s Build a Digital Flagship That Pays For Itself.
+        </h2>
+        <p class="mt-4 text-sm sm:text-base text-zinc-300 max-w-xl mx-auto font-light leading-relaxed">
+          Detailed proposals provided within one business day. No sales reps, no high-pressure scripts — just direct consultation with our lead strategist.
+        </p>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="contact.html" class="btn-studio-primary px-8 py-3.5 text-xs">
+            <span>Start Your Project Brief</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+          <a href="tel:+12896089883" class="btn-studio-secondary px-8 py-3.5 text-xs font-mono">
+            <span>Call or Text +1 (289) 608-9883</span>
+          </a>
+        </div>
+
+        <div class="mt-8 text-xs font-mono text-zinc-400">
+          50/50 PAYMENT TERMS · 100% IP CODE OWNERSHIP · FIRM LAUNCH GUARANTEE
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- STUDIO FOOTER -->
+  <footer class="bg-[#050507] border-t border-white/[0.06] text-zinc-400 text-xs py-16">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12">
+      
+      <div class="md:col-span-5 flex flex-col items-start">
+        <a href="index.html" class="flex items-center gap-3 mb-4">
+          <div class="w-7 h-7 rounded-md bg-zinc-900 border border-white/20 flex items-center justify-center font-mono font-bold text-xs text-white">IX</div>
+          <span class="font-bold text-sm tracking-tight text-white font-sans">IMPEX STUDIOS</span>
+        </a>
+        <p class="text-xs text-zinc-400 leading-relaxed max-w-sm font-light">
+          Boutique digital marketing agency and bespoke web studio. Senior architects engineering conversion platforms for businesses that refuse to look ordinary.
+        </p>
+        <div class="mt-6 flex flex-col gap-1 text-xs text-zinc-400 font-mono">
+          <div>DIRECT: <a href="tel:+12896089883" class="text-zinc-200 hover:text-white">+1 (289) 608-9883</a></div>
+          <div>EMAIL: <a href="mailto:contact@impexstudios.com" class="text-zinc-200 hover:text-white">contact@impexstudios.com</a></div>
+          <div>STUDIO HOURS: MON–FRI, 9:00 AM – 6:00 PM EST</div>
+        </div>
+      </div>
+
+      <div class="md:col-span-2 col-span-6">
+        <div class="meta-tag text-zinc-400 mb-4">DIRECTORY</div>
+        <ul class="space-y-2 text-xs">
+          <li><a href="index.html" class="hover:text-white">Overview</a></li>
+          <li><a href="about.html" class="hover:text-white">The Agency</a></li>
+          <li><a href="portfolio.html" class="hover:text-white">Selected Work</a></li>
+          <li><a href="pricing.html" class="hover:text-white">Pricing Structure</a></li>
+          <li><a href="faq.html" class="hover:text-white">Knowledgebase</a></li>
+          <li><a href="contact.html" class="hover:text-white">Project Inquiry</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3 col-span-6">
+        <div class="meta-tag text-zinc-400 mb-4">PACKAGES</div>
+        <ul class="space-y-2 text-xs">
+          <li><a href="services.html#landing" class="hover:text-white">Landing Page Sprint ($499)</a></li>
+          <li><a href="services.html#multipage" class="hover:text-white">Multi-Page Platform ($999)</a></li>
+          <li><a href="services.html#business" class="hover:text-white">Business Website Pro ($1,499)</a></li>
+          <li><a href="services.html#ecommerce" class="hover:text-white">E-Commerce Storefront ($1,999)</a></li>
+          <li><a href="services.html#growth" class="hover:text-white">AI Chatbots & Local SEO</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-2">
+        <div class="meta-tag text-zinc-400 mb-4">COMMISSION</div>
+        <div class="space-y-3">
+          <a href="contact.html" class="btn-studio-primary text-xs w-full py-2.5 text-center">
+            Initiate Project
+          </a>
+          <a href="sms:+12896089883" class="btn-studio-secondary text-xs w-full py-2.5 text-center font-mono">
+            Direct Text
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-mono text-zinc-400">
+      <div>© 2026 IMPEX STUDIOS. ALL RIGHTS RESERVED.</div>
+      <div class="flex items-center gap-6">
+        <a href="sitemap.xml" class="hover:text-zinc-300">SITEMAP</a>
+        <a href="faq.html" class="hover:text-zinc-300">TERMS & PRIVACY</a>
+        <a href="contact.html" class="hover:text-zinc-300">CONSULTATION</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="public/js/main.js"></script>
+</body>
+</html>

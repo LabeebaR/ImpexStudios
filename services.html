@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Services & Specifications — Impex Studios | Web & Digital Growth Agency</title>
+  <meta name="description" content="Explore our four core website packages and nine growth services. High-converting landing pages from $499, full multi-page sites from $999, AI chatbots, and SEO rank-boosting services." />
+  <meta name="keywords" content="marketing agency services, web design packages, SEO optimization services, AI chatbot development, landing page design, e-commerce web development" />
+  <link rel="canonical" href="https://impexstudios.com/services.html" />
+
+  <!-- Fonts: Instrument Serif, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="public/css/style.css" />
+</head>
+
+<body class="bg-[#08080a] text-zinc-100 antialiased relative min-h-screen flex flex-col font-sans">
+  <div class="fixed inset-0 bg-studio-grid pointer-events-none -z-20 opacity-70"></div>
+  <div class="bg-radial-subtle"></div>
+
+  <!-- STUDIO TELEMETRY HEADER STRIP -->
+  <div class="border-b border-white/[0.06] bg-[#08080a]/90 text-[11px] font-mono text-zinc-400 py-2 hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-2">
+          <span class="status-dot"></span>
+          <span class="text-zinc-300 font-medium">STUDIO STATUS: ACCEPTING SELECT COMMISSIONS</span>
+        </span>
+        <span class="text-zinc-600">|</span>
+        <span>TORONTO, CA [43.6532° N, 79.3832° W]</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="tel:+12896089883" class="text-zinc-300 hover:text-white transition-colors">+1 (289) 608-9883</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 studio-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Impex Studios Homepage">
+        <div class="w-8 h-8 rounded-lg bg-zinc-900 border border-white/20 flex items-center justify-center font-mono font-bold text-xs text-white">IX</div>
+        <div class="flex flex-col">
+          <span class="font-sans font-extrabold text-base tracking-tight text-white">IMPEX STUDIOS</span>
+          <span class="meta-tag -mt-0.5 text-[9px] text-zinc-400">Design & Marketing</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1 bg-white/[0.02] border border-white/[0.08] rounded-full px-3 py-1 backdrop-blur-xl">
+        <a href="index.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Overview</a>
+        <a href="about.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Agency</a>
+        <a href="services.html" class="px-4 py-1.5 text-xs font-medium rounded-full bg-white/10 text-white transition-all">Services</a>
+        <a href="portfolio.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Selected Work</a>
+        <a href="pricing.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Pricing</a>
+        <a href="faq.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Knowledgebase</a>
+        <a href="contact.html" class="px-4 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="btn-studio-primary text-xs py-2 px-4">Start Project</a>
+        <button id="mobile-menu-toggle" type="button" class="lg:hidden p-2 rounded-lg bg-white/5 border border-white/10 text-zinc-300">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 bg-[#08080a]/95 backdrop-blur-2xl hidden flex-col p-6 lg:hidden">
+    <div class="flex items-center justify-between pb-6 border-b border-white/10">
+      <span class="font-extrabold text-white text-base">IMPEX STUDIOS</span>
+      <button id="mobile-close-btn" class="p-2 text-zinc-400 hover:text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-4 mt-8 text-base font-medium text-zinc-200">
+      <a href="index.html" class="py-2 px-4 rounded-xl hover:bg-white/5">Overview</a>
+      <a href="about.html" class="py-2 px-4 rounded-xl hover:bg-white/5">The Agency</a>
+      <a href="services.html" class="py-2 px-4 rounded-xl bg-white/10 text-white">Services & Packages</a>
+      <a href="portfolio.html" class="py-2 px-4 rounded-xl hover:bg-white/5">Selected Work</a>
+      <a href="pricing.html" class="py-2 px-4 rounded-xl hover:bg-white/5">Pricing</a>
+      <a href="faq.html" class="py-2 px-4 rounded-xl hover:bg-white/5">Knowledgebase</a>
+      <a href="contact.html" class="py-2 px-4 rounded-xl hover:bg-white/5">Contact</a>
+    </nav>
+  </div>
+
+  <main class="flex-grow">
+    
+    <!-- EDITORIAL HEADER -->
+    <section class="py-20 md:py-28 border-b border-white/[0.06] relative">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="meta-tag text-zinc-400 mb-3">[ SERVICES CATALOG & DELIVERABLES ]</div>
+        <h1 class="font-sans font-extrabold text-4xl sm:text-5xl md:text-6xl text-white tracking-tight leading-[1.08]">
+          Engineered to Outperform. <br />
+          <span class="font-serif-italic font-normal text-silver-gradient text-5xl sm:text-6xl md:text-7xl">Priced transparently.</span>
+        </h1>
+        <p class="mt-6 text-base sm:text-lg text-zinc-300 font-light leading-relaxed max-w-2xl mx-auto">
+          Four flagship digital platforms and nine precision growth accelerators. Choose the exact scope required for your business objectives.
+        </p>
+      </div>
+    </section>
+
+    <!-- CORE 4 PACKAGES -->
+    <section class="py-24 border-b border-white/[0.06] relative" id="packages">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="meta-tag text-zinc-400 mb-8">[ CORE DIGITAL PLATFORMS ]</div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Package 1: Landing Page -->
+          <div class="studio-card spotlight-card rounded-2xl p-6 flex flex-col justify-between" id="landing">
+            <div>
+              <div class="meta-tag text-zinc-400">[ SPEC 01 / SINGLE PAGE ]</div>
+              <h3 class="font-sans font-bold text-xl text-white mt-3">Landing Page</h3>
+              <p class="mt-2 text-xs text-zinc-400 leading-relaxed font-light">
+                A single high-converting digital storefront, live in 24–48 hours.
+              </p>
+              <div class="mt-4 flex items-baseline gap-2">
+                <span class="font-mono font-bold text-3xl text-white">$499</span>
+                <span class="text-xs text-zinc-500 line-through font-mono">$999</span>
+              </div>
+              <ul class="mt-6 space-y-2.5 text-xs text-zinc-300 border-t border-white/[0.08] pt-6 font-light">
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Bespoke editorial layout</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Mobile responsive architecture</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Interactive contact form</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Core SEO indexing</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Sub-second load speed</li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/[0.06]">
+              <a href="contact.html?package=landing-page" class="btn-studio-secondary w-full text-center text-xs py-2">
+                Select Landing Page
+              </a>
+            </div>
+          </div>
+
+          <!-- Package 2: Multi-Page Website -->
+          <div class="studio-card studio-card-featured spotlight-card rounded-2xl p-6 flex flex-col justify-between relative" id="multipage">
+            <div>
+              <div class="meta-tag text-purple-400">[ SPEC 02 / POPULAR ]</div>
+              <h3 class="font-sans font-bold text-xl text-white mt-3">Multi-Page Website</h3>
+              <p class="mt-2 text-xs text-zinc-300 leading-relaxed font-light">
+                Full authority platform for growing businesses up to 5 custom pages.
+              </p>
+              <div class="mt-4 flex items-baseline gap-2">
+                <span class="font-mono font-bold text-3xl text-white">$999</span>
+                <span class="text-xs text-zinc-500 line-through font-mono">$1,999</span>
+              </div>
+              <ul class="mt-6 space-y-2.5 text-xs text-zinc-200 border-t border-white/[0.08] pt-6 font-light">
+                <li class="flex items-center gap-2"><span class="text-purple-400 font-mono">✦</span> Up to 5 custom designed pages</li>
+                <li class="flex items-center gap-2"><span class="text-purple-400 font-mono">✦</span> Home, About, Services, Contact, Gallery</li>
+                <li class="flex items-center gap-2"><span class="text-purple-400 font-mono">✦</span> Local SEO & Schema markup</li>
+                <li class="flex items-center gap-2"><span class="text-purple-400 font-mono">✦</span> Google Maps & interactive forms</li>
+                <li class="flex items-center gap-2"><span class="text-purple-400 font-mono">✦</span> 30 Days post-launch support</li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/[0.08]">
+              <a href="contact.html?package=multi-page" class="btn-studio-primary w-full text-center text-xs py-2">
+                Select Multi-Page
+              </a>
+            </div>
+          </div>
+
+          <!-- Package 3: Business Pro -->
+          <div class="studio-card spotlight-card rounded-2xl p-6 flex flex-col justify-between" id="business">
+            <div>
+              <div class="meta-tag text-zinc-400">[ SPEC 03 / UP TO 10 PAGES ]</div>
+              <h3 class="font-sans font-bold text-xl text-white mt-3">Business Website Pro</h3>
+              <p class="mt-2 text-xs text-zinc-400 leading-relaxed font-light">
+                Full-scale authority platform with blog, case studies, and analytics.
+              </p>
+              <div class="mt-4 flex items-baseline gap-2">
+                <span class="font-mono font-bold text-3xl text-white">$1,499</span>
+                <span class="text-xs text-zinc-500 line-through font-mono">$2,999</span>
+              </div>
+              <ul class="mt-6 space-y-2.5 text-xs text-zinc-300 border-t border-white/[0.08] pt-6 font-light">
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Up to 10 custom layouts</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Dynamic CMS blog engine</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Case studies & portfolio grid</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Google Analytics 4 integration</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Advanced technical SEO tuning</li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/[0.06]">
+              <a href="contact.html?package=business-pro" class="btn-studio-secondary w-full text-center text-xs py-2">
+                Select Business Pro
+              </a>
+            </div>
+          </div>
+
+          <!-- Package 4: E-Commerce Storefront -->
+          <div class="studio-card spotlight-card rounded-2xl p-6 flex flex-col justify-between" id="ecommerce">
+            <div>
+              <div class="meta-tag text-zinc-400">[ SPEC 04 / STOREFRONT ]</div>
+              <h3 class="font-sans font-bold text-xl text-white mt-3">E-Commerce Website</h3>
+              <p class="mt-2 text-xs text-zinc-400 leading-relaxed font-light">
+                Sell products online with product catalog, cart, and secure checkout.
+              </p>
+              <div class="mt-4 flex items-baseline gap-2">
+                <span class="font-mono font-bold text-3xl text-white">$1,999</span>
+                <span class="text-xs text-zinc-500 line-through font-mono">$3,999</span>
+              </div>
+              <ul class="mt-6 space-y-2.5 text-xs text-zinc-300 border-t border-white/[0.08] pt-6 font-light">
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Complete online catalog</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Cart & Stripe/Apple Pay</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Inventory & shipping integration</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> Product schema for Google</li>
+                <li class="flex items-center gap-2"><span class="text-zinc-500 font-mono">—</span> 30 Days support included</li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/[0.06]">
+              <a href="contact.html?package=ecommerce" class="btn-studio-secondary w-full text-center text-xs py-2">
+                Select E-Commerce
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9 GROWTH ACCELERATORS (MINIMALIST & PROFESSIONAL - NO EMOJIS) -->
+    <section class="py-24 border-b border-white/[0.06] bg-[#09090c] relative" id="growth">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="max-w-2xl mb-16">
+          <div class="meta-tag text-zinc-400 mb-2">[ GROWTH ACCELERATORS & ESSENTIALS ]</div>
+          <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            Amplify Your Digital Footprint.
+          </h2>
+          <p class="mt-3 text-sm text-zinc-400 font-light">
+            AI chatbots, local search dominance, and conversion add-ons calibrated to scale your pipeline.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <!-- Addon 1 -->
+          <div class="studio-card spotlight-card rounded-2xl p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="meta-tag text-purple-400">[ MOD 01 / AI ]</span>
+              <div class="font-mono text-sm text-white font-bold">$299 <span class="text-[10px] text-zinc-500 line-through">$599</span></div>
+            </div>
+            <h3 class="font-sans font-bold text-base text-white">Custom AI Chatbot Assistant</h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-light">
+              Trained on your business knowledge. Answers FAQs, qualifies inbound leads, and schedules appointments 24/7 in your brand tone.
+            </p>
+          </div>
+
+          <!-- Addon 2 -->
+          <div class="studio-card spotlight-card rounded-2xl p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="meta-tag text-zinc-400">[ MOD 02 / SEARCH ]</span>
+              <div class="font-mono text-sm text-white font-bold">$249 <span class="text-[10px] text-zinc-500 line-through">$499</span></div>
+            </div>
+            <h3 class="font-sans font-bold text-base text-white">SEO Optimization Sprint</h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-light">
+              Keyword positioning, technical JSON-LD schema, performance optimization, and on-page metadata engineered for #1 rankings.
+            </p>
+          </div>
+
+          <!-- Addon 3 -->
+          <div class="studio-card spotlight-card rounded-2xl p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="meta-tag text-zinc-400">[ MOD 03 / LOCAL ]</span>
+              <div class="font-mono text-sm text-white font-bold">$99 <span class="text-[10px] text-zinc-500 line-through">$199</span></div>
+            </div>
+            <h3 class="font-sans font-bold text-base text-white">Google Business Profile Setup</h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-light">
+              Full optimization for Google Maps 3-Pack placement — the fastest and most impactful local search conversion driver.
+            </p>
+          </div>
+
+          <!-- Addon 4 -->
+          <div class="studio-card spotlight-card rounded-2xl p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="meta-tag text-zinc-400">[ MOD 04 / RETAINER ]</span>
+              <div class="font-mono text-sm text-white font-bold">$49/mo <span class="text-[10px] text-zinc-500 line-through">$99/mo</span></div>
+            </div>
+            <h3 class="font-sans font-bold text-base text-white">Website Maintenance Plan</h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-light">
+              Monthly backups, security updates, uptime monitoring, and fast text/image updates so you never have to think about maintenance.
+            </p>
+          </div>
+
+          <!-- Addon 5 -->
+          <div class="studio-card spotlight-card rounded-2xl p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="meta-tag text-zinc-400">[ MOD 05 / EMAIL ]</span>
+              <div class="font-mono text-sm text-white font-bold">$99 <span class="text-[10px] text-zinc-500 line-through">$199</span></div>
+            </div>
+            <h3 class="font-sans font-bold text-base text-white">Professional Domain Email</h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-light">
+              Google Workspace or Microsoft 365 configuration with DKIM, SPF, and DMARC verification to ensure total inbox deliverability.
+            </p>
+          </div>
+
+          <!-- Addon 6 -->
+          <div class="studio-card spotlight-card rounded-2xl p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="meta-tag text-zinc-400">[ MOD 06 / CALENDAR ]</span>
+              <div class="font-mono text-sm text-white font-bold">$249 <span class="text-[10px] text-zinc-500 line-through">$499</span></div>
+            </div>
+            <h3 class="font-sans font-bold text-base text-white">Online Booking Integration</h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-light">
+              Direct calendar synchronization with automated SMS/email reminders and payment collection directly at the point of booking.
+            </p>
+          </div>
+
+          <!-- Addon 7 -->
+          <div class="studio-card spotlight-card rounded-2xl p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="meta-tag text-zinc-400">[ MOD 07 / EDITORIAL ]</span>
+              <div class="font-mono text-sm text-white font-bold">$149 <span class="text-[10px] text-zinc-500 line-through">$299</span></div>
+            </div>
+            <h3 class="font-sans font-bold text-base text-white">Content Blog Engine</h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-light">
+              Clean markdown publishing platform with categories, author bios, tag filters, and RSS feed setup for content authority.
+            </p>
+          </div>
+
+          <!-- Addon 8 -->
+          <div class="studio-card spotlight-card rounded-2xl p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="meta-tag text-zinc-400">[ MOD 08 / METRICS ]</span>
+              <div class="font-mono text-sm text-white font-bold">$149 <span class="text-[10px] text-zinc-500 line-through">$299</span></div>
+            </div>
+            <h3 class="font-sans font-bold text-base text-white">Custom Analytics Dashboard</h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-light">
+              Google Analytics 4 event tracking, goal conversions, and a streamlined monthly executive report dashboard.
+            </p>
+          </div>
+
+          <!-- Addon 9 -->
+          <div class="studio-card spotlight-card rounded-2xl p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="meta-tag text-zinc-400">[ MOD 09 / CRM ]</span>
+              <div class="font-mono text-sm text-white font-bold">$99 <span class="text-[10px] text-zinc-500 line-through">$199</span></div>
+            </div>
+            <h3 class="font-sans font-bold text-base text-white">Custom Lead Capture & CRM Sync</h3>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-light">
+              Multi-step interactive quote forms wired directly to your CRM, HubSpot, or Notion database with spam defense.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ARCHITECTURAL COMPARISON MATRIX -->
+    <section class="py-24 border-b border-white/[0.06] relative">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="text-center mb-16">
+          <div class="meta-tag text-zinc-400 mb-2">[ TECHNICAL SPECIFICATIONS ]</div>
+          <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            Side-by-Side Package Matrix.
+          </h2>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse studio-card rounded-2xl overflow-hidden border border-white/[0.1]">
+            <thead>
+              <tr class="border-b border-white/[0.08] bg-white/[0.02] text-xs font-mono uppercase tracking-wider text-zinc-400">
+                <th class="p-5 font-normal">SPECIFICATION</th>
+                <th class="p-5 text-white font-bold">Landing Page ($499)</th>
+                <th class="p-5 text-purple-400 font-bold">Multi-Page ($999)</th>
+                <th class="p-5 text-zinc-200 font-bold">Business Pro ($1,499)</th>
+                <th class="p-5 text-zinc-200 font-bold">E-Commerce ($1,999)</th>
+              </tr>
+            </thead>
+            <tbody class="text-xs text-zinc-300 divide-y divide-white/[0.06] font-light">
+              <tr>
+                <td class="p-5 font-mono text-white font-normal">PAGE CAPACITY</td>
+                <td class="p-5">1 Long-Form Page</td>
+                <td class="p-5">Up to 5 Pages</td>
+                <td class="p-5">Up to 10 Pages</td>
+                <td class="p-5">Unlimited Storefront</td>
+              </tr>
+              <tr>
+                <td class="p-5 font-mono text-white font-normal">TURNAROUND</td>
+                <td class="p-5 font-mono text-emerald-400">24–48 Hours</td>
+                <td class="p-5 font-mono">5–7 Days</td>
+                <td class="p-5 font-mono">7–10 Days</td>
+                <td class="p-5 font-mono">10–14 Days</td>
+              </tr>
+              <tr>
+                <td class="p-5 font-mono text-white font-normal">SEO ARCHITECTURE</td>
+                <td class="p-5">Core Indexing</td>
+                <td class="p-5">Local Schema & Ranking</td>
+                <td class="p-5">GEO & AI Search Tuning</td>
+                <td class="p-5">Google Merchant Schema</td>
+              </tr>
+              <tr>
+                <td class="p-5 font-mono text-white font-normal">CMS BLOG SETUP</td>
+                <td class="p-5 text-zinc-600">—</td>
+                <td class="p-5 text-zinc-400">Add-on ($149)</td>
+                <td class="p-5 text-white">Included</td>
+                <td class="p-5 text-white">Included</td>
+              </tr>
+              <tr>
+                <td class="p-5 font-mono text-white font-normal">STORE & CART</td>
+                <td class="p-5 text-zinc-600">—</td>
+                <td class="p-5 text-zinc-600">—</td>
+                <td class="p-5 text-zinc-600">—</td>
+                <td class="p-5 text-white">Included</td>
+              </tr>
+              <tr>
+                <td class="p-5 font-mono text-white font-normal">LAUNCH WARRANTY</td>
+                <td class="p-5">30 Days Included</td>
+                <td class="p-5">30 Days Included</td>
+                <td class="p-5">30 Days Included</td>
+                <td class="p-5">30 Days Included</td>
+              </tr>
+              <tr>
+                <td class="p-5 font-mono text-white font-normal">ACTION</td>
+                <td class="p-5"><a href="contact.html?package=landing-page" class="font-mono text-xs text-white underline">SELECT →</a></td>
+                <td class="p-5"><a href="contact.html?package=multi-page" class="font-mono text-xs text-purple-400 underline">SELECT →</a></td>
+                <td class="p-5"><a href="contact.html?package=business-pro" class="font-mono text-xs text-white underline">SELECT →</a></td>
+                <td class="p-5"><a href="contact.html?package=ecommerce" class="font-mono text-xs text-white underline">SELECT →</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-24 text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+          Not Sure Which Scope Fits Your Exact Goals?
+        </h2>
+        <p class="mt-4 text-sm sm:text-base text-zinc-400 max-w-md mx-auto font-light">
+          Talk directly with our lead strategist. We will evaluate your business and advise on the highest-ROI package.
+        </p>
+        <div class="mt-8 flex justify-center gap-4 flex-wrap">
+          <a href="contact.html" class="btn-studio-primary px-8 py-3.5 text-xs">Schedule Consultation</a>
+          <a href="pricing.html" class="btn-studio-secondary px-8 py-3.5 text-xs">Review Pricing</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- STUDIO FOOTER -->
+  <footer class="bg-[#050507] border-t border-white/[0.06] text-zinc-400 text-xs py-16">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12">
+      <div class="md:col-span-5">
+        <a href="index.html" class="flex items-center gap-3 mb-4">
+          <div class="w-7 h-7 rounded-md bg-zinc-900 border border-white/20 flex items-center justify-center font-mono font-bold text-xs text-white">IX</div>
+          <span class="font-bold text-sm text-white font-sans">IMPEX STUDIOS</span>
+        </a>
+        <p class="text-xs text-zinc-400 leading-relaxed max-w-sm font-light">
+          Senior-led digital marketing agency and bespoke web studio.
+        </p>
+        <div class="mt-4 font-mono text-xs text-zinc-400">
+          DIRECT: <a href="tel:+12896089883" class="text-zinc-200">+1 (289) 608-9883</a>
+        </div>
+      </div>
+      <div class="md:col-span-3 col-span-6">
+        <div class="meta-tag text-zinc-400 mb-4">DIRECTORY</div>
+        <ul class="space-y-2 text-xs">
+          <li><a href="index.html" class="hover:text-white">Overview</a></li>
+          <li><a href="about.html" class="hover:text-white">The Agency</a></li>
+          <li><a href="services.html" class="text-white">Services</a></li>
+          <li><a href="portfolio.html" class="hover:text-white">Selected Work</a></li>
+          <li><a href="pricing.html" class="hover:text-white">Pricing</a></li>
+          <li><a href="faq.html" class="hover:text-white">Knowledgebase</a></li>
+          <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4 col-span-6">
+        <div class="meta-tag text-zinc-400 mb-4">COMMISSION</div>
+        <p class="text-xs text-zinc-400 mb-3">Get a bespoke proposal within 24 hours.</p>
+        <a href="contact.html" class="btn-studio-primary text-xs py-2 px-5 inline-block">Start Project</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="public/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+# Impex Studios Robots.txt
+# Optimized for Googlebot, Bingbot, and Generative Engine Crawlers (GEO)
+
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /scraped_pages/
+Disallow: /fetch_bundles.py
+Disallow: /scraper.py
+Disallow: /copy_assets.py
+
+# Allow AI Answer Engine crawlers for conversational citations
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://impexstudios.com/sitemap.xml
